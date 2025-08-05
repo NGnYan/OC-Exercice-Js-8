@@ -6,6 +6,10 @@ function convertToBinary() {
 
   let decimalNumber = decimalInput.value;
 
+  if (decimalNumber === "" || isNaN(decimalNumber)) {
+    return;
+  }
+
   const number = parseInt(decimalNumber, 10);
   const numberBinary = number.toString(2);
   resultText.textContent = numberBinary;

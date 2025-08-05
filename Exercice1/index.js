@@ -1,5 +1,5 @@
 function pairNumbers(min, max) {
-  let pairNumbers = [];
+  const pairNumbers = [];
 
   for (let i = min; i <= max; i++) {
     if (i % 2 === 0) {
